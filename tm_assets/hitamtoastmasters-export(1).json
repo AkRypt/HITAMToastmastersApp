@@ -1,0 +1,553 @@
+{
+  "hitamToastmaster" : {
+    "memberProfiles" : {
+      "Akshit" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 1,
+        "level" : "L1",
+        "meetings" : {
+          "-LjQuHEpdSL0H47iTWea" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "Yes",
+            "rolePlayed" : "Audience"
+          },
+          "-LjW3GckC1mPGEZtHZzC" : {
+            "date" : "11/7/2019",
+            "meetingName" : "TCS Maitree Meeting #603",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "TTM"
+          }
+        },
+        "name" : "Akshit Dayal",
+        "pathway" : "Dynamic Leadership",
+        "photo" : "Akshit.jpg",
+        "ribbonsEarned" : 1,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Alankar" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXDeHXdQt63ZlekW8Y" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Speaker"
+          }
+        },
+        "name" : "Alankar Achadian",
+        "pathway" : "-",
+        "photo" : "alankar.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 1
+      },
+      "Chinmai" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXDYjjrrovYijD6KBW" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "SAA"
+          }
+        },
+        "name" : "Chinmai Kamineni",
+        "pathway" : "-",
+        "photo" : "chinmai.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Hema" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXDohMT0AKUqBepM74" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "General Evaluator"
+          }
+        },
+        "name" : "Hema Sai Sree Uppuluri",
+        "pathway" : "-",
+        "photo" : "Hema.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "VP Membership",
+        "speechesGiven" : 0
+      },
+      "Hunaina" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXDxi27-TLzbPMeZa0" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Hunaina Komaravelli",
+        "pathway" : "-",
+        "photo" : "hunaina.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Jasmitha" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXDMHzG1pWlrdGklPJ" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "Yes",
+            "rolePlayed" : "Speaker"
+          }
+        },
+        "name" : "Jasmitha Amulya Orusu",
+        "pathway" : "Dynamic Leadership",
+        "photo" : "Jasmitha.jpg",
+        "ribbonsEarned" : 1,
+        "role" : "Secretary",
+        "speechesGiven" : 1
+      },
+      "Jyothsna" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXFMk5QCaUQiltXn-z" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Jyothsna Karuparthi",
+        "pathway" : "-",
+        "photo" : "jyothsna.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Karthik" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXFdQx-dq6vdchO2HX" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Grammarian"
+          }
+        },
+        "name" : "Karthik Dumpala",
+        "pathway" : "-",
+        "photo" : "Karthik.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Seargent At Arms",
+        "speechesGiven" : 0
+      },
+      "Lakshmi" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXFC5egSetIbaT9hMR" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Lakshmi Sruthi Surnedi",
+        "pathway" : "-",
+        "photo" : "sruthi.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Lasya" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L2",
+        "meetings" : {
+          "-LjXF43X7nJeJVYcYW7i" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Sai Prasanna N",
+        "pathway" : "Dynamic Leadership",
+        "photo" : "Lasya.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Immediate Past President",
+        "speechesGiven" : 0
+      },
+      "Manish" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L2",
+        "meetings" : {
+          "-LjXDDzQX1QUTAAXvtbj" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "Yes",
+            "rolePlayed" : "TMOD"
+          }
+        },
+        "name" : "Manish Arun Kumar Arcot",
+        "pathway" : "Dynamic Leadership",
+        "photo" : "Manish.jpg",
+        "ribbonsEarned" : 1,
+        "role" : "VP Education",
+        "speechesGiven" : 0
+      },
+      "Pallavi" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXE4g6Vgyy5A5o92NY" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "TTM"
+          }
+        },
+        "name" : "Pallavi Mamidala",
+        "pathway" : "-",
+        "photo" : "Pallavi.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Treasurer",
+        "speechesGiven" : 0
+      },
+      "Pranav" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXE9ahw-mMw1jDzT1m" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Timer"
+          }
+        },
+        "name" : "T. A. Pranav",
+        "pathway" : "-",
+        "photo" : "pranav.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Radha" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEFpp5y_qyacX27Al" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Radha Sri Lasya Burra",
+        "pathway" : "-",
+        "photo" : "radha.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Rajiv" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEJVL_xPk1aJb44se" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Rajiv Chandran Penjerla",
+        "pathway" : "-",
+        "photo" : "rajiv.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Rebecca" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L2",
+        "meetings" : {
+          "-LjXEq36yp_gkPtyqX1X" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "Yes",
+            "rolePlayed" : "Speech Evaluator"
+          }
+        },
+        "name" : "Rebecca B",
+        "pathway" : "-",
+        "photo" : "Rebecca.jpg",
+        "ribbonsEarned" : 1,
+        "role" : "President",
+        "speechesGiven" : 0
+      },
+      "ShivaRaj" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "",
+        "meetings" : {
+          "-LjXExSYQhHeMSjlW5Nz" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Shiva Raj G",
+        "pathway" : "-",
+        "photo" : "shivaraj.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "ShivaSri" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEtytaKfDaRUvTqFI" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Shiva Sriram",
+        "pathway" : "-",
+        "photo" : "shivasri.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Sparsha" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEjN83QwbGDl9XGe0" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Speaker"
+          }
+        },
+        "name" : "Sparsha Perupalli",
+        "pathway" : "-",
+        "photo" : "Sparsha.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "VP Public Relations",
+        "speechesGiven" : 1
+      },
+      "Suguna" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEc3W8MicnYeEubq4" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Speech Evaluator"
+          }
+        },
+        "name" : "Suguna I",
+        "pathway" : "-",
+        "photo" : "suguna.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Vidya" : {
+        "clubAbsence" : 0,
+        "clubAttendance" : 1,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXEXR4QCEFI7cKQN0q" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Ah Counter"
+          }
+        },
+        "name" : "Vidya Jamisetti",
+        "pathway" : "-",
+        "photo" : "vidya.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      },
+      "Vikram" : {
+        "clubAbsence" : 1,
+        "clubAttendance" : 0,
+        "externalAttendance" : 0,
+        "level" : "L1",
+        "meetings" : {
+          "-LjXER7PGJ2wYkUM0ZzJ" : {
+            "date" : "6/7/2019",
+            "meetingName" : "Meeting #31",
+            "ribbonEarned" : "No",
+            "rolePlayed" : "Not Attended"
+          }
+        },
+        "name" : "Vikram Raj Maska",
+        "pathway" : "-",
+        "photo" : "vikram.jpg",
+        "ribbonsEarned" : 0,
+        "role" : "Club Member",
+        "speechesGiven" : 0
+      }
+    },
+    "momeetings" : {
+      "-LjRP-bnbNxAbAh5Lzl8" : {
+        "ahcounter" : "idkgv",
+        "evaluator1" : "xjjxjc",
+        "evaluator2" : "jxjxc",
+        "evaluator3" : "",
+        "ge" : "idkvv",
+        "geReview" : "nxjxc",
+        "iod" : "this is idiom",
+        "meetingDate" : "10/7/2019",
+        "meetingNumber" : "32658",
+        "meetingTheme" : "Sample",
+        "saa" : "idkdcv",
+        "speaker1" : "nsndf",
+        "speaker2" : "djxjc",
+        "speaker3" : "",
+        "timer" : "idkff",
+        "tmod" : "idkfvv",
+        "tmodReview" : "jdjxd",
+        "ttSpeaker1" : "idkdf",
+        "ttSpeaker10" : "vdvbx",
+        "ttSpeaker2" : "idkfvv",
+        "ttSpeaker3" : "scvvv",
+        "ttSpeaker4" : "dvvfvv",
+        "ttSpeaker5" : "cvvvv",
+        "ttSpeaker6" : "dfvvv",
+        "ttSpeaker7" : "fvvvx",
+        "ttSpeaker8" : "vvfvx",
+        "ttSpeaker9" : "vvdff",
+        "ttm" : "idkvvv",
+        "wmg" : "idkvxc",
+        "wod" : "lolxxc"
+      },
+      "-LjRQXBYvM1BcanktvMu" : {
+        "ahcounter" : "cc",
+        "evaluator1" : "cvv",
+        "evaluator2" : "ccc",
+        "evaluator3" : "",
+        "ge" : "cc",
+        "geReview" : "ccc",
+        "iod" : "skmsmskd",
+        "meetingDate" : "10/7/2019",
+        "meetingNumber" : "32",
+        "meetingTheme" : "bsbsnsndndnddjjdjdkdkdkd",
+        "saa" : "sdjx",
+        "speaker1" : "dcv",
+        "speaker2" : "ff",
+        "speaker3" : "",
+        "timer" : "cc",
+        "tmod" : "dcc",
+        "tmodReview" : "cc",
+        "ttSpeaker1" : "ffv",
+        "ttSpeaker10" : "",
+        "ttSpeaker2" : "cvv",
+        "ttSpeaker3" : "vvv",
+        "ttSpeaker4" : "",
+        "ttSpeaker5" : "",
+        "ttSpeaker6" : "",
+        "ttSpeaker7" : "",
+        "ttSpeaker8" : "",
+        "ttSpeaker9" : "",
+        "ttm" : "cc",
+        "wmg" : "c",
+        "wod" : "ssmm"
+      },
+      "-Lj_5VyMOXsL6TI_SvlT" : {
+        "ahcounter" : "Kranthi",
+        "evaluator1" : "Ramesh",
+        "evaluator2" : "Suresh",
+        "evaluator3" : "Param",
+        "ge" : "Pari",
+        "geReview" : "Proo",
+        "iod" : "Head over heels",
+        "meetingDate" : "12/7/2019",
+        "meetingNumber" : "32",
+        "meetingTheme" : "Awesome life",
+        "saa" : "Charan",
+        "speaker1" : "Awesome speech",
+        "speaker2" : "Nice speech",
+        "speaker3" : "Bad speech",
+        "timer" : "Suresh",
+        "tmod" : "Charan",
+        "tmodReview" : "Awesome good",
+        "ttSpeaker1" : "Pari",
+        "ttSpeaker10" : "",
+        "ttSpeaker2" : "Paro",
+        "ttSpeaker3" : "Lohit",
+        "ttSpeaker4" : "Karan",
+        "ttSpeaker5" : "Smith",
+        "ttSpeaker6" : "Will",
+        "ttSpeaker7" : "Hari",
+        "ttSpeaker8" : "",
+        "ttSpeaker9" : "",
+        "ttm" : "Ramesh",
+        "wmg" : "Karthik",
+        "wod" : "Spont"
+      }
+    },
+    "password" : {
+      "password" : "abc"
+    }
+  }
+}

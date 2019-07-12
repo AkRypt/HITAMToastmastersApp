@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/gramSpeakerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/left_background"
+        android:hint="Speaker Name"
+        android:layout_marginTop="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textCapWords"/>
+
+    <CheckBox
+        android:id="@+id/wodCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gramSpeakerName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/black"
+        android:text="WOD"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/iodCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:layout_below="@id/gramSpeakerName"
+        android:textColor="@android:color/black"
+        android:text="IOD"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/remarksGram"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="top"
+        android:background="@drawable/left_background"
+        android:layout_below="@id/wodCheckbox"
+        android:paddingTop="10dp"
+        android:paddingStart="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Remarks"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/gramSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/remarksGram"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_fab"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:text="Submit"/>
+
+    <ListView
+        android:id="@+id/gramList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gramSubmit"
+        android:layout_marginTop="6dp"/>
+
+</RelativeLayout>

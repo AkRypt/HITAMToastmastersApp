@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/spinnerRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/meetingSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meetEntryRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/entryMeetingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:hint="Meeting Number"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/entryMeetingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/left_background"
+                android:text="Date"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
+                android:elevation="4dp" />
+
+            <EditText
+                android:id="@+id/entryMeetingTheme"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingNumber"
+                android:hint="Meeting Theme"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/entryMeetingWOD"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTheme"
+                android:hint="WOD"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="42dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingIOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTheme"
+                android:layout_toEndOf="@id/entryMeetingWOD"
+                android:hint="IOD"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:id="@+id/rptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entryMeetingIOD"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:text="Role Players"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entryMeetingIOD"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:text="Table Topic Speakers"/>
+
+            <EditText
+                android:id="@+id/entryMeetingSAA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/rptv"
+                android:hint="SAA"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingTMOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingSAA"
+                android:hint="TMOD"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTMOD"
+                android:hint="GE"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingTTM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingGE"
+                android:hint="TTM"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTTM"
+                android:hint="Timer"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingAhCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTimer"
+                android:hint="Ah Counter"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryMeetingWMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingAhCounter"
+                android:hint="WMG"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+
+            <!--TT Speakers-->
+
+            <EditText
+                android:id="@+id/entryTTSpeaker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/rptv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 1"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingSAA"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 2"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTMOD"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 3"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingGE"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 4"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTTM"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 5"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingTimer"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 6"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryMeetingAhCounter"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 7"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryTTSpeaker7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 8"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryTTSpeaker8"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 9"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTTSpeaker10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/entryTTSpeaker9"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:hint="Speaker 10"
+                android:background="@drawable/left_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entrySpeaker1Desc"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entryTTSpeaker10"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="10dp"
+                android:hint="Speaker 1 Description"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/entryEvaluator1Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entrySpeaker1Desc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Evaluator 1 Name"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entrySpeaker2Desc"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:paddingBottom="10dp"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entryEvaluator1Desc"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="10dp"
+                android:hint="Speaker 2 Description"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/entryEvaluator2Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entrySpeaker2Desc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Evaluator 2 Description"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entrySpeaker3Desc"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entryEvaluator2Desc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="Speaker 3 Description"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/entryEvaluator3Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entrySpeaker3Desc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Evaluator 3 Description"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/entryTMODDesc"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entryEvaluator3Desc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="TMOD Description"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/entryGEDesc"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:background="@drawable/left_background"
+                android:layout_below="@id/entryTMODDesc"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:hint="General Evaluator Description"
+                android:inputType="textCapSentences"/>
+
+            <Button
+                android:id="@+id/entryMeetingSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entryGEDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/back_fab"
+                android:text="Submit"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exCommRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

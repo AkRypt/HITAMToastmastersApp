@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hitamPic"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:src="@drawable/hitam_pic"
+            android:scaleType="centerCrop"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hitamPic"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:text="Made By: Akshit Dayal © 2019"/>
+
+        <TextView
+            android:id="@+id/club"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="17sp"
+            android:text="Club: Hyderabad Institute of Technology and Management \n
+[HITAM] Toastmasters Club (Division H2)"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/club"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"
+            android:text="Description:
+            \nIn this era of digitalization, We've kept wondering why we have been wasting papers
+for documenting the members and recording their times and ah's.
+It would make things a lot easier to do it with our 24/7 partners - our mobile phones.
+Hence, we have decided to make an app which keeps track of the members and their achievements;
+\nKeeps track of all the minutes of meetings and also provides functionalities for Timer,
+Ah Counter and Word Master Grammarian."/>
+
+    </RelativeLayout>
+</ScrollView>

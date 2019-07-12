@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/members1_bg">
+
+    <!--android:background="#18438c"-->
+
+    <RelativeLayout
+        android:id="@+id/memberTopCard"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/tm_bg_card"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/memberPic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/memberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/memberPic"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="110dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="Akshit Dayal"/>
+
+        <TextView
+            android:id="@+id/memberRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/memberPic"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/memberName"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="140dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Club Member"/>
+
+        <TextView
+            android:id="@+id/memberLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/memberPic"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="L1-P1"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberTopCard">
+
+        <RelativeLayout
+            android:id="@+id/mainInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/pathway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="Pathway: "/>
+
+            <TextView
+                android:id="@+id/ribbons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/pathway"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="Ribbons Earned: "/>
+
+            <TextView
+                android:id="@+id/internalAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/ribbons"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="Internal Meetings Attended: "/>
+
+            <TextView
+                android:id="@+id/externalAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/internalAttendance"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="External Meetings Attended: "/>
+
+            <TextView
+                android:id="@+id/speechesGiven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/externalAttendance"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="Speeches Given: "/>
+
+            <TextView
+                android:id="@+id/clubAbsence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/speechesGiven"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="Club Absence: "/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/meetingTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/mainInfo"
+            android:textSize="20sp"
+            android:text="Meetings"
+            android:layout_marginTop="6dp"/>
+
+        <ListView
+            android:id="@+id/profileMeetingsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/meetingTV"
+            android:layout_marginTop="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/profileLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/meetingTV"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

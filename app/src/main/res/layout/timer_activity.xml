@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timerBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/timerTopTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Make sure to choose the correct type of speech"
+        android:textAlignment="center"
+        android:textColor="#062C5B"/>
+
+    <Spinner
+        android:id="@+id/timerSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTopTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/preparedSpeechesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/speakerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Speaker Name"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="textCapWords"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speakerName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/timerStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chronometer"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_fab_circle"
+            android:textColor="@android:color/white"
+            android:text="Start"/>
+
+        <Button
+            android:id="@+id/timerStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/chronometer"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/back_fab_red"
+            android:textColor="@android:color/white"
+            android:text="Finish"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/belowSt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/preparedSpeechesView"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/timerResultsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/belowSt"/>
+
+    <RelativeLayout
+        android:id="@+id/colorBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:id="@+id/whiteClr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="4dp"
+            android:background="@android:color/white"
+            android:onClick="colorChange"/>
+
+        <Button
+            android:id="@+id/greenClr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="4dp"
+            android:layout_below="@id/whiteClr"
+            android:layout_marginTop="10dp"
+            android:background="#00ff04"
+            android:onClick="colorChange"/>
+
+        <Button
+            android:id="@+id/yellowClr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="4dp"
+            android:layout_below="@id/greenClr"
+            android:layout_marginTop="10dp"
+            android:background="#fff203"
+            android:onClick="colorChange"/>
+
+        <Button
+            android:id="@+id/redClr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="4dp"
+            android:layout_below="@id/yellowClr"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="colorChange"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/hitmLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/hitam_logo"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/hitmLogo"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/hitmLogo"
+        android:layout_toStartOf="@id/meetingNumber"
+        android:fontFamily="@font/orbitron"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textColor="#249e11"
+        android:text="HITAM TOASTMASTERS CLUB"/>
+
+    <TextView
+        android:id="@+id/meetingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:fontFamily="@font/orbitron"
+        android:text="Meeting: #32"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/meetingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/orbitron"
+        android:layout_below="@id/meetingNumber"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:text="Meeting Date"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/meetingTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/hitmLogo"
+        android:layout_toStartOf="@id/meetingDate"
+        android:layout_below="@id/meetingNumber"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_purple"
+        android:fontFamily="@font/orbitron"
+        android:text="THEME OF MEETING"/>
+
+    <LinearLayout
+        android:id="@+id/topLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitmLogo"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rpLinLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/saalabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:text="SAA"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron" />
+
+            <TextView
+                android:id="@+id/saaPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="100dp"
+                android:textColor="@android:color/black"
+                android:text="SAA"/>
+
+            <TextView
+                android:id="@+id/tmodlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saalabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="TMOD"/>
+
+            <TextView
+                android:id="@+id/tmodPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saaPlayer"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="TMOD"/>
+
+            <TextView
+                android:id="@+id/gelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tmodlabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="GE"/>
+
+            <TextView
+                android:id="@+id/gePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tmodPlayer"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="GE"/>
+
+            <TextView
+                android:id="@+id/ttmlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gelabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="TTM"/>
+
+            <TextView
+                android:id="@+id/ttmPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gelabel"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="TTM"/>
+
+            <TextView
+                android:id="@+id/timerlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ttmlabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="TIMER"/>
+
+            <TextView
+                android:id="@+id/timerPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ttmlabel"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="TIMER"/>
+
+            <TextView
+                android:id="@+id/ahclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timerlabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="Ah Counter"/>
+
+            <TextView
+                android:id="@+id/ahcPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timerlabel"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="Ah Counter"/>
+
+            <TextView
+                android:id="@+id/gramlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ahclabel"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:text="WMG"/>
+
+            <TextView
+                android:id="@+id/gramPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ahclabel"
+                android:layout_marginStart="100dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="WMG"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/wod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="WOD: "
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/iod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wod"
+                android:textSize="10sp"
+                android:text="IOD: "
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginTop="6dp"/>
+
+
+            <TextView
+                android:id="@+id/tmod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iod"
+                android:layout_marginTop="6dp"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="TMOD: " />
+
+            <TextView
+                android:id="@+id/tmodDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tmod"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="TMOD: " />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speakerLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/topLinLay"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/speaker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Speaker 1: " />
+
+            <TextView
+                android:id="@+id/speaker1Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speaker1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Speaker 1: " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/speaker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Speaker 2: " />
+
+            <TextView
+                android:id="@+id/speaker2Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speaker2"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Speaker 2: " />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/speaker3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Speaker 3: " />
+
+            <TextView
+                android:id="@+id/speaker3Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speaker3"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Speaker 3: " />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/evalLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/speakerLinLay"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ev1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Evaluator 1: " />
+
+            <TextView
+                android:id="@+id/evaluator1Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ev1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Evaluator 1: " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ev2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Evaluator 2: " />
+
+            <TextView
+                android:id="@+id/evaluator2Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ev2"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Evaluator 2: " />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ev3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e42c64"
+                android:fontFamily="@font/orbitron"
+                android:textSize="12sp"
+                android:text="Evaluator 3: " />
+
+            <TextView
+                android:id="@+id/evaluator3Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ev3"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Evaluator 3: " />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ttm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evalLinLay"
+        android:textSize="12sp"
+        android:textColor="#e42c64"
+        android:fontFamily="@font/orbitron"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:text="Table Topic Speakers: "/>
+
+    <LinearLayout
+        android:id="@+id/rolePlayerLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttm1"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ttSpeaker1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ttSpeaker6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/ttSpeaker10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="Name"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rolePlayerLinLay"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/ge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e42c64"
+            android:fontFamily="@font/orbitron"
+            android:textSize="12sp"
+            android:text="GE: "/>
+
+        <TextView
+            android:id="@+id/geDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ge"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:text="GE"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/hitamlogo2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

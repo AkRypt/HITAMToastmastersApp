@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ahcListSpeakerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Name: "/>
+
+    <TextView
+        android:id="@+id/ahcListAhCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Ah: "/>
+
+    <TextView
+        android:id="@+id/ahcListUmCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_toEndOf="@id/ahcListAhCount"
+        android:layout_marginStart="26dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Um: "/>
+
+    <TextView
+        android:id="@+id/ahcListShortCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_toEndOf="@id/ahcListUmCount"
+        android:layout_marginStart="26dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Short: "/>
+
+    <TextView
+        android:id="@+id/ahcListLongCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_toEndOf="@id/ahcListShortCount"
+        android:layout_marginStart="26dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Long: "/>
+
+    <TextView
+        android:id="@+id/ahcListRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListAhCount"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:text="Remarks: "/>
+
+</RelativeLayout>

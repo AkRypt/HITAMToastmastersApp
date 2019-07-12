@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/memberPic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/memberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/memberPic"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Akshit Dayal"/>
+
+    <TextView
+        android:id="@+id/memberRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/memberPic"
+        android:layout_below="@id/memberName"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Club Member"/>
+
+    <TextView
+        android:id="@+id/memberLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/memberPic"
+        android:layout_below="@id/memberRole"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="L1-P1"/>
+
+</RelativeLayout>

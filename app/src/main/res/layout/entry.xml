@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#062C5B"
+        android:text="Pick the title you want to update"/>
+
+    <Spinner
+        android:id="@+id/titleSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/pick"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textEnd"/>
+
+    <RelativeLayout
+        android:id="@+id/levelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/levelEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:hint="Level"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"/>
+
+        <Button
+            android:id="@+id/levelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelEntry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_fab"
+            android:text="Submit"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newMeetAttendedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/newMeetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Meeting Name"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:inputType="textCapWords"/>
+
+        <RadioGroup
+            android:id="@+id/newMeetRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newMeetName"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/attended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attended"/>
+
+            <RadioButton
+                android:id="@+id/notAttended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Attended"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/attendDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newMeetRadioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:background="@drawable/left_background"
+            android:text="Date"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/newMeetRadioSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attendDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_fab"
+            android:text="Submit"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/newMeetDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/newMeetDetailsName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Meeting Name"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:inputType="textCapWords"/>
+
+        <Spinner
+            android:id="@+id/newMeetRolePlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/newMeetDetailsName"
+            android:background="@drawable/left_background"
+            android:layout_marginTop="16dp"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/newMeetRolePlayed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@id/newMeetDetailsName"-->
+            <!--android:background="@drawable/left_background"-->
+            <!--android:hint="Role Played"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:paddingTop="6dp"-->
+            <!--android:paddingBottom="6dp"-->
+            <!--android:paddingStart="18dp"-->
+            <!--android:paddingEnd="18dp"/>-->
+
+        <RadioGroup
+            android:id="@+id/ribbonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newMeetRolePlayed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/ribbonEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ribbon Earned"/>
+
+            <RadioButton
+                android:id="@+id/ribbonNotEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ribbon Not Earned"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/newMeetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ribbonGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:background="@drawable/left_background"
+            android:text="Date"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/newMeetSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newMeetDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_fab"
+            android:text="Submit"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/extMeetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/extMeetDetailsName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Meeting Name"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:inputType="textCapWords"/>
+
+        <Spinner
+            android:id="@+id/extMeetRolePlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/extMeetDetailsName"
+            android:background="@drawable/left_background"
+            android:layout_marginTop="16dp"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/extMeetRolePlayed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@id/extMeetDetailsName"-->
+            <!--android:background="@drawable/left_background"-->
+            <!--android:hint="Role Played"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:paddingTop="6dp"-->
+            <!--android:paddingBottom="6dp"-->
+            <!--android:paddingStart="18dp"-->
+            <!--android:paddingEnd="18dp"/>-->
+
+        <RadioGroup
+            android:id="@+id/extRibbonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/extMeetRolePlayed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/extRibbonEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ribbon Earned"/>
+
+            <RadioButton
+                android:id="@+id/extRibbonNotEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ribbon Not Earned"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/extMeetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/extRibbonGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:background="@drawable/left_background"
+            android:text="Date"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/extMeetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/extMeetDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_fab"
+            android:text="Submit"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:textColor="#062C5B"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToMembers"/>
+
+</RelativeLayout>

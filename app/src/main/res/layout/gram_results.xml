@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gramResultSpeakerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Name: "/>
+
+    <TextView
+        android:id="@+id/gramResultRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gramResultSpeakerName"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:text="Remarks: "/>
+
+    <ImageView
+        android:id="@+id/gramResultWod"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@id/gramResultIod"
+        android:layout_marginEnd="25dp"
+        android:src="@mipmap/letter_w"/>
+
+    <ImageView
+        android:id="@+id/gramResultIod"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:src="@mipmap/letter_i"/>
+
+</RelativeLayout>

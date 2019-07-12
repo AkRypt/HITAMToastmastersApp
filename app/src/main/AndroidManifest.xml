@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hitam_toastmasters">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tm1_logo"
+        android:label="HITAM - Toastmasters"
+        android:roundIcon="@mipmap/tm1_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MembersTheme">
+
+        </activity>
+
+
+        <activity android:name=".MembersList"
+            android:label="Members"
+            android:theme="@style/MembersTheme"/>
+        <activity android:name=".Profile"
+            android:label="Your Profile"
+            android:theme="@style/ProfileActionBar"/>
+        <activity android:name=".Password"
+            android:label="Password"/>
+        <activity android:name=".Entry"
+            android:label="Entry"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MeetingsList"
+            android:label="Home Club Meetings"
+            android:theme="@style/MembersTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PasswordNewMeeting"
+            android:label="Password"/>
+        <activity android:name=".NewMeetingEntry"
+            android:label="New Meeting"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MeetingMinutesPoster"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TimerPage"
+            android:label="Timer"
+            android:screenOrientation="portrait"
+            android:theme="@style/TimerTheme"/>
+        <activity android:name=".AhCounterPage"
+            android:label="Ah Counter"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Grammarian"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Grammarian"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".InfoPage"
+            android:label="About"/>
+    </application>
+
+</manifest>
