@@ -1,7 +1,9 @@
 package com.example.hitam_toastmasters;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +19,9 @@ import java.util.List;
 
 public class AhCounterPage extends AppCompatActivity {
 
-    private EditText ahcSpeakerName, ahCount, umCount, shortCount, longCount, remarks;
-    private Button ahAdd, umAdd, shortAdd, longAdd, ahcSubmit;
-    private ListView ahcList;
+    private EditText ahcSpeakerName, ahCount, umCount, shortCount, longCount, andCount, soCount, word, remarks;
+    private Button ahAdd, umAdd, shortAdd, longAdd, andAdd, soAdd, ahcSubmit;
+    private NonScrollableListView ahcList;
     final List<AhCounterSingleItem> ahcListItem = new ArrayList<>();
     private AhCounterResultsAdapter ahCounterResultsAdapter;
 
@@ -33,12 +35,17 @@ public class AhCounterPage extends AppCompatActivity {
         umCount = findViewById(R.id.umCount);
         shortCount = findViewById(R.id.shortCount);
         longCount = findViewById(R.id.longCount);
+        andCount = findViewById(R.id.andCount);
+        soCount = findViewById(R.id.soCount);
+        word = findViewById(R.id.wordAhc);
         remarks = findViewById(R.id.remarksAhc);
 
         ahAdd = findViewById(R.id.ahAddBtn);
         umAdd = findViewById(R.id.umAddBtn);
         shortAdd = findViewById(R.id.shortAddBtn);
         longAdd = findViewById(R.id.longAddBtn);
+        andAdd = findViewById(R.id.andAddBtn);
+        soAdd = findViewById(R.id.soAddBtn);
         ahcSubmit = findViewById(R.id.ahcSubmit);
 
         ahcList = findViewById(R.id.ahcList);
@@ -77,6 +84,22 @@ public class AhCounterPage extends AppCompatActivity {
             }
         });
 
+        andAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int count = Integer.parseInt(andCount.getText().toString().trim())+1;
+                andCount.setText(String.valueOf(count));
+            }
+        });
+
+        soAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int count = Integer.parseInt(soCount.getText().toString().trim())+1;
+                soCount.setText(String.valueOf(count));
+            }
+        });
+
         ahcSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,7 +108,8 @@ public class AhCounterPage extends AppCompatActivity {
                     ahcListItem.add(new AhCounterSingleItem(ahcSpeakerName.getText().toString().trim(),
                             ahCount.getText().toString(), umCount.getText().toString(),
                             shortCount.getText().toString(), longCount.getText().toString(),
-                            remarks.getText().toString()));
+                            andCount.getText().toString(), soCount.getText().toString(),
+                            word.getText().toString(), remarks.getText().toString()));
                     ahCounterResultsAdapter.notifyDataSetChanged();
 
                     ahcSpeakerName.setText("");
@@ -93,6 +117,9 @@ public class AhCounterPage extends AppCompatActivity {
                     umCount.setText("0");
                     shortCount.setText("0");
                     longCount.setText("0");
+                    andCount.setText("0");
+                    soCount.setText("0");
+                    word.setText("");
                     remarks.setText("");
                     Toast.makeText(AhCounterPage.this, "Successfully recorded!", Toast.LENGTH_SHORT).show();
                 } else {
@@ -100,5 +127,23 @@ public class AhCounterPage extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(R.drawable.warning)
+                .setTitle("Exit?")
+                .setMessage("Are you sure you want to exit? All the results will be gone. Take a screenshot if you need the results.")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

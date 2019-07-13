@@ -63,7 +63,8 @@ public class MeetingsList extends AppCompatActivity {
                 meetingsLoading.setVisibility(View.GONE);
                 ArrayAdapter<String[]> adapter = new ArrayAdapter<String[]>(MeetingsList.this, R.layout.simple_list_item_2_vt, R.id.t1, meetingListItem) {
                     @Override
-                    public View getView(int position, View convertView, ViewGroup parent) {
+                    @NonNull
+                    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
                         View view = super.getView(position, convertView, parent);
 
                         TextView text1 = view.findViewById(R.id.t1);

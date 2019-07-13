@@ -16,7 +16,7 @@ import java.util.List;
 
 public class AhCounterResultsAdapter extends BaseAdapter {
 
-    TextView spkrName, ah, um, shrt, lng, rem;
+    TextView spkrName, ah, um, shrt, lng, and, so, wrd, rem;
 
     public Context context;
     public List<AhCounterSingleItem> singleMemberItem;
@@ -61,6 +61,15 @@ public class AhCounterResultsAdapter extends BaseAdapter {
 
         lng = listItemView.findViewById(R.id.ahcListLongCount);
         lng.setText("Long: "+currentMemberItem.getLng());
+
+        and = listItemView.findViewById(R.id.ahcListAndCount);
+        and.setText("And: "+currentMemberItem.getAnd());
+
+        so = listItemView.findViewById(R.id.ahcListSoCount);
+        so.setText("So: "+currentMemberItem.getSo());
+
+        wrd = listItemView.findViewById(R.id.ahcListWord);
+        wrd.setText("Favourite Word: "+currentMemberItem.getWord());
 
         rem = listItemView.findViewById(R.id.ahcListRemark);
         rem.setText("Remarks: "+currentMemberItem.getRem());

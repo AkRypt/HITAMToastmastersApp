@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/exo"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:text="Meeting #13"/>
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/profileMeetingName"
+        android:fontFamily="@font/exo"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:textSize="16sp"

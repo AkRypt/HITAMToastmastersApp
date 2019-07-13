@@ -4,6 +4,6 @@
 
     <item android:id="@+id/addMeeting"
         android:title="New Meeting"
-        android:icon="@mipmap/add_meeting"
+        android:icon="@drawable/add_meeting"
         app:showAsAction="always"/>
 </menu>

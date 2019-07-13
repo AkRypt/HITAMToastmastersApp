@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/exo"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:text="Meeting"/>
@@ -24,6 +25,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
+        android:fontFamily="@font/exo"
         android:layout_below="@id/t1"
         android:textSize="14sp"
         android:text="Date"/>

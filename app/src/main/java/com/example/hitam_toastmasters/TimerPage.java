@@ -1,10 +1,12 @@
 package com.example.hitam_toastmasters;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +56,7 @@ public class TimerPage extends AppCompatActivity {
         speakerName = findViewById(R.id.speakerName);
         chronometer = findViewById(R.id.chronometer);
         timerStart = findViewById(R.id.timerStart);
+        timerStart.setVisibility(View.VISIBLE);
         timerStop = findViewById(R.id.timerStop);
 
         // Results List
@@ -112,6 +115,7 @@ public class TimerPage extends AppCompatActivity {
                     chronometer.setBase(SystemClock.elapsedRealtime());
                     chronometer.start();
                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                    timerStart.setVisibility(View.INVISIBLE);
                     colorBtns.setVisibility(View.INVISIBLE);
                     timerSpinner.setVisibility(View.INVISIBLE);
                     timerResultsList.setVisibility(View.INVISIBLE);
@@ -143,9 +147,10 @@ public class TimerPage extends AppCompatActivity {
                                             timerBg.setBackgroundColor(Color.parseColor("#ffffff"));
                                         }
                                     }, 5000);
-                                } else if (chronometer.getText().equals("20:00")) {
+                                } else if (chronometer.getText().equals("15:00")) {
                                     chronometer.stop();
                                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+                                    timerStart.setVisibility(View.VISIBLE);
                                     colorBtns.setVisibility(View.VISIBLE);
                                     timerSpinner.setVisibility(View.VISIBLE);
                                     timerResultsList.setVisibility(View.VISIBLE);
@@ -179,9 +184,10 @@ public class TimerPage extends AppCompatActivity {
                                             timerBg.setBackgroundColor(Color.parseColor("#ffffff"));
                                         }
                                     }, 5000);
-                                } else if (chronometer.getText().equals("20:00")) {
+                                } else if (chronometer.getText().equals("15:00")) {
                                     chronometer.stop();
                                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+                                    timerStart.setVisibility(View.VISIBLE);
                                     colorBtns.setVisibility(View.VISIBLE);
                                     timerSpinner.setVisibility(View.VISIBLE);
                                     timerResultsList.setVisibility(View.VISIBLE);
@@ -215,9 +221,10 @@ public class TimerPage extends AppCompatActivity {
                                         timerBg.setBackgroundColor(Color.parseColor("#ffffff"));
                                     }
                                 }, 5000);
-                            } else if (chronometer.getText().equals("20:00")) {
+                            } else if (chronometer.getText().equals("5:00")) {
                                 chronometer.stop();
                                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+                                timerStart.setVisibility(View.VISIBLE);
                                 colorBtns.setVisibility(View.VISIBLE);
                                 timerSpinner.setVisibility(View.VISIBLE);
                                 timerResultsList.setVisibility(View.VISIBLE);
@@ -251,9 +258,10 @@ public class TimerPage extends AppCompatActivity {
                                             timerBg.setBackgroundColor(Color.parseColor("#ffffff"));
                                         }
                                     }, 5000);
-                                } else if (chronometer.getText().equals("20:00")) {
+                                } else if (chronometer.getText().equals("5:00")) {
                                     chronometer.stop();
                                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+                                    timerStart.setVisibility(View.VISIBLE);
                                     colorBtns.setVisibility(View.VISIBLE);
                                     timerSpinner.setVisibility(View.VISIBLE);
                                     timerResultsList.setVisibility(View.VISIBLE);
@@ -272,6 +280,7 @@ public class TimerPage extends AppCompatActivity {
                 if (speakerName.getText().toString().length() > 0) {
                     chronometer.stop();
                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+                    timerStart.setVisibility(View.VISIBLE);
                     colorBtns.setVisibility(View.VISIBLE);
                     timerSpinner.setVisibility(View.VISIBLE);
                     timerResultsList.setVisibility(View.VISIBLE);
@@ -292,6 +301,24 @@ public class TimerPage extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(R.drawable.warning)
+                .setTitle("Exit?")
+                .setMessage("Are you sure you want to exit? All the results will be gone. Take a screenshot if you need the results.")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
     public void colorChange(View view) {

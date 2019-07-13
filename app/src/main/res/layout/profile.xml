@@ -18,8 +18,7 @@
             android:id="@+id/memberPic"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher"/>
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/memberName"
@@ -27,10 +26,11 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/memberPic"
             android:layout_alignParentTop="true"
+            android:fontFamily="@font/exo"
             android:layout_marginTop="8dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="110dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@android:color/white"
             android:text="Akshit Dayal"/>
 
@@ -41,10 +41,11 @@
             android:layout_toEndOf="@id/memberPic"
             android:layout_centerVertical="true"
             android:layout_below="@id/memberName"
+            android:fontFamily="@font/exo"
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="140dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@android:color/white"
             android:text="Club Member"/>
 
@@ -54,9 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/memberPic"
             android:layout_alignParentBottom="true"
+            android:fontFamily="@font/exo"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@android:color/white"
             android:text="L1-P1"/>
 
@@ -79,6 +81,7 @@
                 android:id="@+id/pathway"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/exo"
                 android:layout_marginTop="6dp"
                 android:layout_marginStart="16dp"
                 android:textColor="@android:color/black"
@@ -89,6 +92,7 @@
                 android:id="@+id/ribbons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/exo"
                 android:layout_marginTop="4dp"
                 android:layout_marginStart="16dp"
                 android:layout_below="@id/pathway"
@@ -100,6 +104,7 @@
                 android:id="@+id/internalAttendance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/exo"
                 android:layout_marginTop="4dp"
                 android:layout_marginStart="16dp"
                 android:layout_below="@id/ribbons"
@@ -112,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/exo"
                 android:layout_marginStart="16dp"
                 android:layout_below="@id/internalAttendance"
                 android:textColor="@android:color/black"
@@ -124,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginStart="16dp"
+                android:fontFamily="@font/exo"
                 android:layout_below="@id/externalAttendance"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
@@ -135,6 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginStart="16dp"
+                android:fontFamily="@font/exo"
                 android:layout_below="@id/speechesGiven"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
@@ -149,6 +157,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:layout_below="@+id/mainInfo"
+            android:fontFamily="@font/exo"
             android:textSize="20sp"
             android:text="Meetings"
             android:layout_marginTop="6dp"/>

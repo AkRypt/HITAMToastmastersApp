@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
+        android:fontFamily="@font/exo"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:text="Name: "/>
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ahcListSpeakerName"
         android:layout_toEndOf="@id/ahcListAhCount"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="20dp"
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:text="Um: "/>
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ahcListSpeakerName"
         android:layout_toEndOf="@id/ahcListUmCount"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="20dp"
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:text="Short: "/>
@@ -52,16 +53,49 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ahcListSpeakerName"
         android:layout_toEndOf="@id/ahcListShortCount"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="20dp"
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:text="Long: "/>
 
     <TextView
-        android:id="@+id/ahcListRemark"
+        android:id="@+id/ahcListAndCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_toEndOf="@id/ahcListLongCount"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="And: "/>
+
+    <TextView
+        android:id="@+id/ahcListSoCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListSpeakerName"
+        android:layout_toEndOf="@id/ahcListAndCount"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="So: "/>
+
+    <TextView
+        android:id="@+id/ahcListWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ahcListAhCount"
+        android:textSize="14sp"
+        android:fontFamily="@font/exo"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:text="Favourite Word: "/>
+
+    <TextView
+        android:id="@+id/ahcListRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahcListWord"
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:layout_marginStart="16dp"

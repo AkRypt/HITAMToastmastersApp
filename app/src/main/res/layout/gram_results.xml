@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
+        android:fontFamily="@font/exo"
         android:textSize="16sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
@@ -31,7 +32,7 @@
         android:layout_marginTop="12dp"
         android:layout_toStartOf="@id/gramResultIod"
         android:layout_marginEnd="25dp"
-        android:src="@mipmap/letter_w"/>
+        android:src="@drawable/letter_w"/>
 
     <ImageView
         android:id="@+id/gramResultIod"
@@ -40,6 +41,6 @@
         android:layout_marginTop="12dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="80dp"
-        android:src="@mipmap/letter_i"/>
+        android:src="@drawable/letter_i"/>
 
 </RelativeLayout>

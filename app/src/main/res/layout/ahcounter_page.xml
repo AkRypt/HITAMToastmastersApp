@@ -1,201 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/ahcSpeakerName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/left_background"
-        android:hint="Speaker Name"
-        android:layout_marginTop="15dp"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:inputType="textCapWords"/>
-
-    <TextView
-        android:id="@+id/ahT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ahcSpeakerName"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textColor="@android:color/black"
-        android:text="Ah"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/ahCount"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/left_background"
-        android:layout_below="@id/ahT"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:inputType="numberDecimal"/>
-
-    <Button
-        android:id="@+id/ahAddBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/plus_button_shape"
-        android:layout_toEndOf="@id/ahCount"
-        android:layout_below="@id/ahT"
-        android:layout_marginTop="0dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:id="@+id/umT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="120dp"
-        android:layout_below="@id/ahcSpeakerName"
-        android:textColor="@android:color/black"
-        android:text="Um"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/umCount"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/left_background"
-        android:layout_below="@id/umT"
-        android:layout_marginTop="10dp"
-        android:layout_toStartOf="@id/umAddBtn"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:inputType="numberDecimal"/>
-
-    <Button
-        android:id="@+id/umAddBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/plus_button_shape"
-        android:layout_below="@id/umT"
-        android:layout_marginTop="0dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:id="@+id/shortT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_below="@id/ahAddBtn"
-        android:textColor="@android:color/black"
-        android:text="Short Pause"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/shortCount"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/left_background"
-        android:layout_below="@id/shortT"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:inputType="numberDecimal"/>
-
-    <Button
-        android:id="@+id/shortAddBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/plus_button_shape"
-        android:layout_toEndOf="@id/shortCount"
-        android:layout_below="@id/shortT"
-        android:layout_marginTop="10dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:id="@+id/longT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="60dp"
-        android:layout_below="@id/umAddBtn"
-        android:textColor="@android:color/black"
-        android:text="Long Pause"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/longCount"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/left_background"
-        android:layout_below="@id/longT"
-        android:layout_marginTop="20dp"
-        android:layout_toStartOf="@id/umAddBtn"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:inputType="numberDecimal"/>
-
-    <Button
-        android:id="@+id/longAddBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/plus_button_shape"
-        android:layout_below="@id/longT"
-        android:layout_marginTop="10dp"
-        android:textColor="@android:color/white"/>
-
-    <EditText
-        android:id="@+id/remarksAhc"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/left_background"
-        android:hint="Remarks"
-        android:layout_below="@id/longAddBtn"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:inputType="textMultiLine"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/ahcSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@id/remarksAhc"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/back_fab"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="6dp"
-        android:text="Submit"/>
+        <EditText
+            android:id="@+id/ahcSpeakerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Speaker Name"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/exo"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="textCapWords"/>
 
-    <ListView
-        android:id="@+id/ahcList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/ahcSubmit"
-        android:layout_marginTop="6dp"/>
+        <TextView
+            android:id="@+id/ahT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ahcSpeakerName"
+            android:fontFamily="@font/exo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@android:color/black"
+            android:text="Ah"
+            android:textSize="16sp"/>
 
-</RelativeLayout>
+        <EditText
+            android:id="@+id/ahCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/ahT"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/ahAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_toEndOf="@id/ahCount"
+            android:layout_below="@id/ahT"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/umT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/exo"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="120dp"
+            android:layout_below="@id/ahcSpeakerName"
+            android:textColor="@android:color/black"
+            android:text="Um"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/umCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/umT"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/umAddBtn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/umAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_below="@id/umT"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/shortT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/ahAddBtn"
+            android:textColor="@android:color/black"
+            android:text="Short Pause"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/shortCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/shortT"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/shortAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_toEndOf="@id/shortCount"
+            android:layout_below="@id/shortT"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/longT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:layout_below="@id/umAddBtn"
+            android:textColor="@android:color/black"
+            android:text="Long Pause"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/longCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/longT"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/umAddBtn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/longAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_below="@id/longT"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/andT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/shortAddBtn"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/exo"
+            android:text="And"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/andCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/andT"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/andAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_toEndOf="@id/andCount"
+            android:layout_below="@id/andT"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/soT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="120dp"
+            android:layout_below="@id/longAddBtn"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/exo"
+            android:text="So"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/soCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:layout_below="@id/soT"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/soAddBtn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/soAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/plus_button_shape"
+            android:layout_below="@id/soT"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/wordAhc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_background"
+            android:hint="Favourite Word"
+            android:layout_below="@id/soAddBtn"
+            android:fontFamily="@font/exo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/remarksAhc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/left_background"
+            android:hint="Remarks"
+            android:layout_below="@id/wordAhc"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="textMultiLine"/>
+
+        <Button
+            android:id="@+id/ahcSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/remarksAhc"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/back_fab"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/exo"
+            android:layout_marginTop="6dp"
+            android:text="Submit"/>
+
+        <com.example.hitam_toastmasters.NonScrollableListView
+            android:id="@+id/ahcList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ahcSubmit"/>
+
+    </RelativeLayout>
+</ScrollView>

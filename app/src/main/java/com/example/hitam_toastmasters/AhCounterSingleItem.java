@@ -2,14 +2,17 @@ package com.example.hitam_toastmasters;
 
 public class AhCounterSingleItem {
 
-    private String spkrname, ah, um, shrt, lng, rem;
+    private String spkrname, ah, um, shrt, lng, and, so, word, rem;
 
-    AhCounterSingleItem(String spkr, String ahx, String umx, String shrtx, String lngx, String remx) {
+    AhCounterSingleItem(String spkr, String ahx, String umx, String shrtx, String lngx, String andx, String sox, String wordx, String remx) {
         spkrname = spkr;
         ah = ahx;
         um = umx;
         shrt = shrtx;
         lng = lngx;
+        and = andx;
+        so = sox;
+        word = wordx;
         rem = remx;
     }
 
@@ -51,6 +54,30 @@ public class AhCounterSingleItem {
 
     public void setLng(String lng) {
         this.lng = lng;
+    }
+
+    public String getAnd() {
+        return and;
+    }
+
+    public void setAnd(String and) {
+        this.and = and;
+    }
+
+    public String getSo() {
+        return so;
+    }
+
+    public void setSo(String so) {
+        this.so = so;
+    }
+
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
     }
 
     public String getRem() {

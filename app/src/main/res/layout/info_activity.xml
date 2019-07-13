@@ -13,7 +13,7 @@
             android:id="@+id/hitamPic"
             android:layout_width="match_parent"
             android:layout_height="260dp"
-            android:src="@drawable/hitam_pic"
+            android:src="@mipmap/hitam_pic"
             android:scaleType="centerCrop"
             android:elevation="4dp"/>
 
@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/hitamPic"
             android:textColor="@android:color/black"
+            android:fontFamily="@font/exo"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:textSize="18sp"
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/author"
             android:textColor="@android:color/black"
+            android:fontFamily="@font/exo"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:textSize="17sp"
@@ -46,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/club"
             android:textColor="@android:color/black"
+            android:fontFamily="@font/exo"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:textSize="16sp"

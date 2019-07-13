@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/meetings2_bg">
+    android:background="@mipmap/meetings2_bg">
 
     <TextView
         android:id="@+id/ch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/exo"
         android:layout_marginTop="12dp"
         android:textSize="16sp"
         android:textAlignment="center"

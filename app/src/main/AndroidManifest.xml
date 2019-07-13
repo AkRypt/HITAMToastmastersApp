@@ -62,7 +62,8 @@
             android:label="Grammarian"
             android:screenOrientation="portrait"/>
         <activity android:name=".InfoPage"
-            android:label="About"/>
+            android:label="About"
+            android:theme="@style/MembersTheme"/>
     </application>
 
 </manifest>
