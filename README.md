@@ -8,4 +8,4 @@ By using the app, members can check what all meetings the other members have att
 Features of the App:
 1. Information about all the members.
 2. Minutes of all the club meetings.
-3. Timer, Ah Counter and Grammarian functionalities.
+3. Timer, Ah Counter, Grammarian and Table Topic functionalities.
