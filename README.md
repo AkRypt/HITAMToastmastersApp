@@ -9,3 +9,13 @@ Features of the App:
 1. Information about all the members.
 2. Minutes of all the club meetings.
 3. Timer, Ah Counter, Grammarian and Table Topic functionalities.
+
+### Screenshots:
+<img src="/screenshots/splashscreen.jpeg" alt="Splash Screen" style="width: 300px"> <img src="/screenshots/mainmenu.jpeg" alt="Main Menu" style="width: 300px">
+<img src="/screenshots/members.jpeg" alt="Members Page" style="width: 300px"><img src="/screenshots/member.jpeg" alt="Member Page" style="width: 300px">
+<img src="/screenshots/meeting.jpeg" alt="Meeting Page" style="width: 300px"><img src="/screenshots/timer.jpeg" alt="Timer Page" style="width: 300px">
+<img src="/screenshots/ahcounter.jpeg" alt="Ah Counter Page" style="width: 300px">
+<img src="/screenshots/grammarian.jpeg" alt="Grammarian Page" style="width: 300px">
+<img src="/screenshots/ttmq.jpeg" alt="TTMQ Page" style="width: 300px">
+<img src="/screenshots/ttm.png" alt="TTM Page" style="width: 300px">
+<img src="/screenshots/info.jpeg" alt="Info Page" style="width: 300px">
